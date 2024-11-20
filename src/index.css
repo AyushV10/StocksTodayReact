@@ -1,0 +1,79 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+
+  color: #ebe7ef;
+  background: radial-gradient(#280a48, #20043d);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  min-height: 80rem;
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+#core-concepts {
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: #140524;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+#trading-widgets {
+  display: flex; /* Align children side by side */
+  gap: 20px; /* Add space between the widgets, you can adjust this */
+  justify-content: space-between;  /* Distribute space between the widgets */
+  align-items: flex-start; /* Align widgets vertically, you can adjust based on content */
+  margin-top: 20px; /* Optional: Adjust spacing from previous content */
+  width: 100%;
+}
+
+#trading-view,
+#second-trading-view {
+  flex: 1;                  /* Make each widget take equal space */
+  max-width: 48%;           /* Limit the max width of each widget */
+  height: 100%;            /* Set a fixed height */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;      /* Center the widgets inside the container */
+  align-items: center;
+}
+
+#trading-view {
+  margin-top: 20px; /* You can adjust this value if needed */
+}
+
+#second-trading-view {
+  margin-top: 20px; /* You can adjust this value if needed */
+}
+
+.tradingview-widget-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tradingview-widget-container__widget {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
